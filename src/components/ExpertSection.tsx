@@ -11,7 +11,7 @@ const ExpertSection = () => {
               <div className="absolute inset-0 rounded-full border-4 border-green-500 shadow-lg">
                 <Image
                   src="/medica-150.webp"
-                  alt="Dra. Ana Costa"
+                  alt="Ana Costa"
                   fill
                   className="rounded-full object-cover"
                   priority
@@ -24,17 +24,17 @@ const ExpertSection = () => {
               {/* Citação */}
               <div className="text-gray-700 space-y-4">
                 <p>
-                  &ldquo;Analisamos rigorosamente a eficácia, segurança e depoimentos reais para trazer uma seleção que realmente funciona.&rdquo;
+                  &ldquo;Analisamos rigorosamente a eficácia, segurança e depoimentos reais de produtos capilares para trazer uma seleção que realmente funciona contra a queda e fortalece os cabelos.&rdquo;
                 </p>
               </div>
 
               {/* Nome e Especialidade */}
               <div>
                 <h3 className="text-lg md:text-xl font-semibold text-green-600 mb-1">
-                  Dra. Ana Costa
+                  Ana Costa
                 </h3>
                 <p className="text-gray-600 text-sm md:text-base">
-                  Especialista em Emagrecimento
+                  Especialista em Saúde Capilar
                 </p>
               </div>
             </div>

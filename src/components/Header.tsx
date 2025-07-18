@@ -8,7 +8,7 @@ const Header = () => {
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="w-full md:w-auto flex justify-center md:justify-start">
             <Image
-              src="/2logo.png"
+              src="/analise-pagina.png"
               alt="Logo"
               width={280}
               height={100}
@@ -25,7 +25,7 @@ const Header = () => {
                   targetId="ranking"
                   className="text-gray-900 font-medium hover:text-gray-600 transition-colors cursor-pointer"
                 >
-                  Remédios Avaliados
+                  Produtos Avaliados
                 </ScrollLink>
               </li>
               <li>

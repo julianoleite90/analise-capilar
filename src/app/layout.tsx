@@ -11,18 +11,18 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "5 Melhores Remédios Para Emagrecer em 2025",
-  description: "Análise completa dos remédios mais eficazes para emagrecer em 2025. Descubra quais são os produtos que realmente funcionam.",
-  keywords: "remédios para emagrecer, emagrecimento, perda de peso, suplementos emagrecedores",
+  title: "5 Melhores Produtos Para Queda de Cabelo Feminino em 2025",
+  description: "Análise completa dos produtos mais eficazes contra queda capilar e cabelo ralo em 2025. Descubra quais são os tratamentos que realmente funcionam para mulheres.",
+  keywords: "queda de cabelo feminino, cabelo ralo, crescimento capilar, tratamento capilar, calvície feminina, alopecia, produtos para cabelo",
   robots: "index, follow",
   viewport: "width=device-width, initial-scale=1, maximum-scale=5",
   themeColor: "#ffffff",
   manifest: "/manifest.json",
   openGraph: {
     type: "website",
-    title: "5 Melhores Remédios Para Emagrecer em 2025",
-    description: "Análise completa dos remédios mais eficazes para emagrecer em 2025. Descubra quais são os produtos que realmente funcionam.",
-    siteName: "Análise de Emagrecedores",
+    title: "5 Melhores Produtos Para Queda de Cabelo Feminino em 2025",
+    description: "Análise completa dos produtos mais eficazes contra queda capilar e cabelo ralo em 2025. Descubra quais são os tratamentos que realmente funcionam para mulheres.",
+    siteName: "Análise de Produtos Capilares",
   },
 };
 
