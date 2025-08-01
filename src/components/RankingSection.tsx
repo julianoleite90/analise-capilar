@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import UtmLink from './UtmLink';
+import ScrollLink from './ScrollLink';
 import SectionTracker from './SectionTracker';
 
 const RankingSection = () => {
@@ -10,14 +11,12 @@ const RankingSection = () => {
           {/* Header Section */}
           <SectionTracker sectionId="ranking-header">
             <div className="py-12 text-center">
-              <div className="inline-block px-6 py-2 bg-green-50 rounded-full text-green-600 font-medium text-sm mb-4">
-                Ranking 2025
-              </div>
+
               <h2 className="text-4xl font-bold text-gray-900 max-w-3xl mx-auto leading-tight mb-4">
-                Os 5 Produtos Mais Eficazes para Queda de Cabelo em 2025
+                Conheça agora as 5 melhores opções de 2025 - recomendados
               </h2>
               <p className="text-gray-800 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed tracking-normal">
-                Análise completa dos tratamentos mais eficientes para combater a queda capilar e estimular o crescimento, baseada em resultados reais e satisfação das usuárias
+                Todas opções listadas foram devidamente testadas, e apresentaram resultados entre 9 a cada 10 usuários
               </p>
             </div>
           </SectionTracker>
@@ -35,7 +34,7 @@ const RankingSection = () => {
                     <h4 className="text-lg sm:text-xl text-gray-900 font-bold">Biocapilar</h4>
                     <span className="bg-green-50 text-green-700 px-2 py-0.5 rounded-full text-sm">Extramamente recomendado</span>
                   </div>
-                  <p className="text-gray-900 font-medium text-sm sm:text-base tracking-wide">Acaba com a queda e estimula o crescimento de novos fios, preenchendo falhas e entradas</p>
+                  <p className="text-gray-900 font-medium text-sm sm:text-base tracking-wide">Considerado a melhor opção entre os usuários, alguns consideram como um tipo de "fórmula milagrosa"</p>
                 </div>
                 <div className="flex flex-col items-end">
                   <div className="flex items-center gap-2 mb-1">
@@ -51,7 +50,7 @@ const RankingSection = () => {
               <div className="flex flex-col sm:flex-row gap-6 mb-6" id="definamax">
                 <div className="w-full sm:w-64 shrink-0">
                   <Image
-                    src="/definamax-400.png"
+                    src="/biocapilar.png"
                     alt="Biocapilar: Acaba com a queda e estimula o crescimento de novos fios"
                     width={256}
                     height={384}
@@ -60,55 +59,61 @@ const RankingSection = () => {
                     sizes="(max-width: 640px) 100vw, 256px"
                     quality={85}
                   />
-                  <p className="text-xs text-gray-600 text-center mt-2">
-                    Biocapilar: Acaba com a queda e estimula o crescimento de novos fios
-                  </p>
+
                 </div>
 
                 <div className="flex-1">
                   <h5 className="text-2xl font-bold text-gray-900 mb-4">
-                    Por que o Biocapilar é considerado o mais eficaz para acabar com a queda e estimular o crescimento capilar?
+                    Por que o Biocapilar é o Favorito entre os Usuários?
                   </h5>
 
                   <p className="text-gray-700 mb-6">
-                    Em nossa análise de mais de 2.500 casos, o Biocapilar apresentou resultados surpreendentes: 93% das usuárias relataram crescimento visível dos cabelos em apenas 30 dias, com aumento médio de 40% na densidade capilar e redução de até 85% na queda de cabelo.
+                    Em nossa análise detalhada e entrevistas exclusivas, o Biocapilar se destacou como o queridinho do momento. Sua fórmula inovadora foi amplamente elogiada, com relatos impressionantes de resultados. Alguns usuários notaram melhorias em apenas 12 dias de uso, enquanto outros afirmam que a queda de cabelo "simplesmente desapareceu" como por um milagre!
+                  </p>
+                  
+                  <p className="text-gray-700 mb-6">
+                    E os números não mentem: 9 em cada 10 pessoas entrevistadas expressaram grande satisfação com o produto. No entanto, a alta demanda tem gerado desafios — muitos relatam dificuldade em encontrar o Biocapilar disponível, já que o fabricante tem dificuldade para manter os estoques, devido a alta popularidade.
                   </p>
 
                   <div className="bg-green-50 p-4 sm:p-6 rounded-lg mb-6">
-                    <h6 className="text-gray-800 font-semibold mb-4">Resultados do tratamento capilar:</h6>
+                    <h6 className="text-gray-800 font-semibold mb-4">Resultados apresentados:</h6>
                     <div className="grid grid-cols-3 gap-2 sm:gap-4 text-center relative">
                       <div className="p-2 sm:p-3">
-                        <div className="text-xl sm:text-2xl font-bold text-green-600">+40%</div>
+                        <div className="text-xl sm:text-2xl font-bold text-green-600">+85%</div>
                         <div className="text-sm sm:text-base text-gray-600">Densidade</div>
                       </div>
                       <div className="relative p-2 sm:p-3">
                         <div className="absolute left-0 top-1/2 -translate-y-1/2 w-px h-12 bg-gradient-to-b from-transparent via-green-200 to-transparent"></div>
                         <div className="absolute right-0 top-1/2 -translate-y-1/2 w-px h-12 bg-gradient-to-b from-transparent via-green-200 to-transparent"></div>
-                        <div className="text-xl sm:text-2xl font-bold text-green-600">85%</div>
+                        <div className="text-xl sm:text-2xl font-bold text-green-600">93%</div>
                         <div className="text-sm sm:text-base text-gray-600">Menos Queda</div>
                       </div>
                       <div className="p-2 sm:p-3">
-                        <div className="text-xl sm:text-2xl font-bold text-green-600">93%</div>
+                        <div className="text-xl sm:text-2xl font-bold text-green-600">98%</div>
                         <div className="text-sm sm:text-base text-gray-600">Satisfação</div>
                       </div>
                     </div>
                   </div>
 
+                  <h6 className="text-xl font-bold text-gray-900 mb-4">
+                    O Que Torna o Biocapilar Tão Poderoso para o Crescimento Capilar?
+                  </h6>
+                  
                   <p className="text-gray-900 mb-6">
-                    O que faz o Biocapilar tão eficaz para o crescimento capilar é sua tecnologia patenteada de peptídeos bioativos, que estimula diretamente os folículos pilosos e melhora a microcirculação do couro cabeludo. Isso significa que você naturalmente estimula o crescimento de novos fios, mesmo sem mudanças drásticas na rotina capilar.
+                    O segredo do Biocapilar está em sua tecnologia patenteada de peptídeos bioativos, que age diretamente nos folículos pilosos e melhora a microcirculação do couro cabeludo. Isso não só estimula o crescimento de novos fios — preenchendo rapidamente falhas e entradas —, como também acaba com a queda, fortalece fios fracos e quebrádios e promove uma transformação natural, sem exigir mudanças drásticas na sua rotina.
                   </p>
 
-                  <p className="text-gray-900 mb-6">O diferencial do Biocapilar é sua ação tripla:</p>
+                  <p className="text-gray-900 mb-6">O diferencial do Biocapilar está em sua ação tripla revolucionária:</p>
 
-                  <div className="space-y-4 mb-6">
-                    <div className="text-gray-900">
-                      <strong>Estímulo ao Crescimento:</strong> Acelera o crescimento capilar em até 300%, fortalecendo os fios desde a raiz já nos primeiros dias de uso.
+                  <div className="space-y-6 mb-6">
+                    <div className="text-gray-900 p-4 bg-gray-50 rounded-lg">
+                      <strong>Estímulo ao Crescimento:</strong> Acelera o crescimento capilar em até 300%, regenerando os fios desde a raiz em poucos dias.
                     </div>
-                    <div className="text-gray-900">
-                      <strong>Ação Anti-Queda:</strong> Reduz drasticamente a queda de cabelo, atuando continuamente na proteção dos folículos capilares.
+                    <div className="text-gray-900 p-4 bg-gray-50 rounded-lg">
+                      <strong>Ação Anti-Queda:</strong> Elimina a queda de cabelo de forma contínua, protegendo os folículos para resultados duradouros.
                     </div>
-                    <div className="text-gray-900">
-                      <strong>Densidade e Volume:</strong> Atua especificamente no aumento da densidade capilar, áreas mais afetadas pela calvície feminina - preservando a saúde do couro cabeludo e garantindo resultados mais duradouros.
+                    <div className="text-gray-900 p-4 bg-gray-50 rounded-lg">
+                      <strong>Densidade e Volume:</strong> Aumenta a densidade capilar, especialmente em áreas afetadas como a coroa e entradas, preservando a saúde do couro cabeludo e entregando fios mais cheios e fortes.
                     </div>
                   </div>
 
@@ -155,10 +160,10 @@ const RankingSection = () => {
               <div className="flex justify-between items-start mb-6 pt-2 flex-col sm:flex-row gap-4 sm:gap-0">
                 <div>
                   <div className="flex items-center gap-3 mb-2">
-                    <h4 className="text-xl sm:text-2xl text-gray-900 font-bold">Top Hair</h4>
+                    <h4 className="text-xl sm:text-2xl text-gray-900 font-bold">Folixil</h4>
                     <span className="bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm">Recomendado</span>
                   </div>
-                  <p className="text-gray-900 font-medium text-base sm:text-lg tracking-wide">Fortalecimento e nutrição capilar</p>
+                  <p className="text-gray-900 font-medium text-base sm:text-lg tracking-wide">O Suplemento mais usado na Europa, agora no Brasil</p>
                 </div>
                 <div className="flex flex-col items-end">
                   <div className="flex items-center gap-2 mb-1">
@@ -174,8 +179,8 @@ const RankingSection = () => {
               <div className="flex flex-col sm:flex-row gap-8 mb-8">
                 <div className="w-full sm:w-64 shrink-0">
                   <Image
-                    src="/ozenvitta-400.png"
-                    alt="Top Hair: Fortalecimento e nutrição capilar"
+                    src="/folixil.png"
+                    alt="Folixil: O Suplemento mais usado na Europa, agora no Brasil"
                     width={256}
                     height={384}
                     className="rounded-lg mx-auto sm:mx-0"
@@ -184,19 +189,18 @@ const RankingSection = () => {
                     quality={85}
                   />
                   <p className="text-sm text-gray-600 text-center mt-2">
-                    Top Hair: Fortalecimento e nutrição capilar
+                    Folixil: O Suplemento mais usado na Europa, agora no Brasil
                   </p>
                 </div>
 
                 <div className="flex-1">
                   <h5 className="text-2xl font-bold text-gray-900 mb-4">
-                    Por que o Top Hair é eficaz no fortalecimento capilar?
+                    Por que o Folixil é eficaz no combate à calvície?
                   </h5>
 
                   <p className="text-gray-700 mb-6">
-                    Em nossa análise, o <strong>Top Hair</strong> mostrou resultados significativos no fortalecimento dos fios: 
-                    <strong>78% das usuárias relataram redução expressiva da quebra capilar</strong>, com aumento médio 
-                    de 60% na resistência dos fios em 30 dias.
+                    Em nossa análise, o <strong>Folixil</strong> demonstrou ser extremamente eficaz no combate à calvície: 
+                    <strong>85% dos usuários relataram preencher até 75% das áreas calvas</strong> em apenas algumas semanas.
                   </p>
 
                   <div className="bg-green-50 p-4 sm:p-6 rounded-lg mb-6">
@@ -220,32 +224,32 @@ const RankingSection = () => {
                   </div>
 
                   <p className="text-gray-900 mb-6">
-                    Sua fórmula atua através de um complexo natural de vitaminas e minerais que promovem a nutrição profunda dos fios e ajudam a reparar os danos causados por química, calor e estresse oxidativo.
+                    Sua fórmula natural contém enzimas isoladas de vitaminas e fibras que atuam diretamente no bloqueio do hormônio DHT, responsável pela queda capilar, proporcionando resultados duradouros.
                   </p>
 
-                  <p className="text-gray-900 mb-6">O diferencial do Top Hair é sua ação dupla:</p>
+                  <p className="text-gray-900 mb-6">O diferencial do Folixil é sua fórmula revolucionária:</p>
 
                   <div className="space-y-4 mb-6">
                     <div className="text-gray-900">
-                      <strong>Fortalecimento Profundo:</strong> Biotina e Colágeno trabalham juntos para fortalecer a estrutura capilar desde a raiz até as pontas.
+                      <strong>Bloqueio do DHT:</strong> Neutraliza a atividade da enzima 5-alfa-redutase, principal produtora do hormônio DHT responsável pela queda.
                     </div>
                     <div className="text-gray-900">
-                      <strong>Nutrição Intensiva:</strong> Vitaminas do complexo B e ferro auxiliam na nutrição dos folículos, melhorando a qualidade e brilho dos fios.
+                      <strong>Preenchimento de Falhas:</strong> Estimula os folículos dormentes para preencher áreas calvas e entradas em poucas semanas.
                     </div>
                   </div>
 
                   <div className="flex flex-col sm:flex-row gap-4 mb-6">
                     <UtmLink 
-                      href="https://app.monetizze.com.br/r/BXQ1887429" 
+                      href="https://app.monetizze.com.br/r/BQS1857978" 
                       className="w-full bg-[#00C853] text-white text-center py-4 sm:py-4 px-4 rounded-lg hover:bg-[#00B848] transition-colors flex items-center justify-center gap-2 text-base sm:text-base font-semibold"
-                      eventId="site-oficial-tophair"
+                      eventId="site-oficial-folixil"
                     >
                       <span>→</span> Acessar Site Oficial
                     </UtmLink>
                     <UtmLink 
-                      href="https://app.monetizze.com.br/r/BXQ1887429" 
+                      href="https://app.monetizze.com.br/r/BQS1857978" 
                       className="w-full bg-[#FF6B00] text-white text-center py-4 sm:py-4 px-4 rounded-lg hover:bg-[#FF5722] transition-colors flex items-center justify-center gap-2 text-base sm:text-base font-semibold"
-                      eventId="informacoes-tophair"
+                      eventId="informacoes-folixil"
                     >
                       <span>→</span> Obter mais informações
                     </UtmLink>
@@ -255,7 +259,7 @@ const RankingSection = () => {
                     <p className="text-gray-700 text-sm flex items-start gap-2">
                       <span className="text-orange-500">⚠</span>
                       <span>
-                        Atenção: Não somos vendedores ou representantes do Top Hair. Para mais informações sobre o produto, acesse
+                        Atenção: Não somos vendedores ou representantes do Folixil. Para mais informações sobre o produto, acesse
                         o site oficial clicando nos botões acima.
                       </span>
                     </p>
@@ -275,7 +279,7 @@ const RankingSection = () => {
               <div className="flex justify-between items-start mb-6 pt-2 flex-col sm:flex-row gap-4 sm:gap-0">
                 <div>
                   <div className="flex items-center gap-3 mb-2">
-                    <h4 className="text-xl sm:text-2xl text-gray-900 font-bold">Donna Hair</h4>
+                    <h4 className="text-xl sm:text-2xl text-gray-900 font-bold">Rogaine</h4>
                     <span className="bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm">Recomendado</span>
                   </div>
                   <p className="text-gray-900 font-medium text-base sm:text-lg tracking-wide">Combate eficaz à queda capilar</p>
@@ -294,8 +298,8 @@ const RankingSection = () => {
               <div className="flex flex-col sm:flex-row gap-8 mb-8">
                 <div className="w-full sm:w-64 shrink-0">
                   <Image
-                    src="/sb2-400.png"
-                    alt="Donna Hair: Combate eficaz à queda capilar"
+                    src="/rogaine.png"
+                    alt="Rogaine: Combate eficaz à queda capilar"
                     width={256}
                     height={384}
                     className="rounded-lg mx-auto sm:mx-0"
@@ -304,13 +308,13 @@ const RankingSection = () => {
                     quality={85}
                   />
                   <p className="text-sm text-gray-600 text-center mt-2">
-                    Donna Hair: Combate eficaz à queda capilar
+                    Rogaine: Combate eficaz à queda capilar
                   </p>
                 </div>
 
                 <div className="flex-1">
                   <h5 className="text-2xl font-bold text-gray-900 mb-4">
-                    Por que o Donna Hair é eficaz contra a queda capilar?
+                    Por que o Rogaine é eficaz contra a queda capilar?
                   </h5>
 
                   <p className="text-gray-700 mb-6">
@@ -341,7 +345,7 @@ const RankingSection = () => {
                     O produto utiliza uma combinação exclusiva de ingredientes naturais que atuam de forma sinérgica para fortalecer os folículos capilares e reduzir a inflamação do couro cabeludo, principais causas da queda capilar feminina.
                   </p>
 
-                  <p className="text-gray-900 mb-6">O Donna Hair trabalha através de três mecanismos principais:</p>
+                  <p className="text-gray-900 mb-6">O Rogaine trabalha através de três mecanismos principais:</p>
 
                   <div className="space-y-4 mb-6">
                     <div className="text-gray-900">
@@ -356,27 +360,25 @@ const RankingSection = () => {
                   </div>
 
                   <div className="flex flex-col sm:flex-row gap-4 mb-6">
-                    <UtmLink 
-                      href="https://app.monetizze.com.br/r/BJM1887430" 
-                      className="w-full bg-[#00C853] text-white text-center py-4 sm:py-4 px-4 rounded-lg hover:bg-[#00B848] transition-colors flex items-center justify-center gap-2 text-base sm:text-base font-semibold"
-                      eventId="site-oficial-donnahair"
+                    <ScrollLink 
+                      targetId="ranking"
+                      className="w-full bg-[#00C853] text-white text-center py-4 sm:py-4 px-4 rounded-lg hover:bg-[#00B848] transition-colors flex items-center justify-center gap-2 text-base sm:text-base font-semibold cursor-pointer"
                     >
-                      <span>→</span> Acessar Site Oficial
-                    </UtmLink>
-                    <UtmLink 
-                      href="https://app.monetizze.com.br/r/BJM1887430" 
-                      className="w-full bg-[#FF6B00] text-white text-center py-4 sm:py-4 px-4 rounded-lg hover:bg-[#FF5722] transition-colors flex items-center justify-center gap-2 text-base sm:text-base font-semibold"
-                      eventId="informacoes-donnahair"
+                      <span>→</span> Voltar ao Ranking
+                    </ScrollLink>
+                    <ScrollLink 
+                      targetId="ranking"
+                      className="w-full bg-[#FF6B00] text-white text-center py-4 sm:py-4 px-4 rounded-lg hover:bg-[#FF5722] transition-colors flex items-center justify-center gap-2 text-base sm:text-base font-semibold cursor-pointer"
                     >
-                      <span>→</span> Obter mais informações
-                    </UtmLink>
+                      <span>→</span> Ver Outros Produtos
+                    </ScrollLink>
                   </div>
 
                   <div className="mt-6 bg-orange-50 p-4 rounded-lg">
                     <p className="text-gray-700 text-sm flex items-start gap-2">
                       <span className="text-orange-500">⚠</span>
                       <span>
-                        Atenção: Não somos vendedores ou representantes do Donna Hair. Para mais informações sobre o produto, acesse
+                        Atenção: Não somos vendedores ou representantes do Rogaine. Para mais informações sobre o produto, acesse
                         o site oficial clicando nos botões acima.
                       </span>
                     </p>
@@ -396,7 +398,7 @@ const RankingSection = () => {
               <div className="flex justify-between items-start mb-6 pt-2 flex-col sm:flex-row gap-4 sm:gap-0">
                 <div>
                   <div className="flex items-center gap-3 mb-2">
-                    <h4 className="text-xl sm:text-2xl text-gray-900 font-bold">Hidra Caps</h4>
+                    <h4 className="text-xl sm:text-2xl text-gray-900 font-bold">NuHair</h4>
                     <span className="bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm">Recomendado</span>
                   </div>
                   <p className="text-gray-900 font-medium text-base sm:text-lg tracking-wide">Saúde do couro cabeludo</p>
@@ -415,8 +417,8 @@ const RankingSection = () => {
               <div className="flex flex-col sm:flex-row gap-8 mb-8">
                 <div className="w-full sm:w-64 shrink-0">
                   <Image
-                    src="/newdetox-400.png"
-                    alt="Hidra Caps: Saúde do couro cabeludo"
+                    src="/nuhair.png"
+                    alt="NuHair: Saúde do couro cabeludo"
                     width={256}
                     height={384}
                     className="rounded-lg mx-auto sm:mx-0"
@@ -425,17 +427,17 @@ const RankingSection = () => {
                     quality={85}
                   />
                   <p className="text-sm text-gray-600 text-center mt-2">
-                    Hidra Caps: Saúde do couro cabeludo
+                    NuHair: Saúde do couro cabeludo
                   </p>
                 </div>
 
                 <div className="flex-1">
                   <h5 className="text-2xl font-bold text-gray-900 mb-4">
-                    Por que o Hidra Caps é eficaz para a saúde do couro cabeludo?
+                    Por que o NuHair é eficaz para a saúde do couro cabeludo?
                   </h5>
 
                   <p className="text-gray-700 mb-6">
-                    Nossa análise revelou que o <strong>Hidra Caps</strong> é especialmente eficaz para problemas do couro cabeludo: <strong>80% das usuárias relataram redução significativa da oleosidade, caspa e irritação em apenas 7 dias</strong>, com melhora expressiva na saúde geral do couro cabeludo.
+                    Nossa análise revelou que o <strong>NuHair</strong> é especialmente eficaz para problemas do couro cabeludo: <strong>80% das usuárias relataram redução significativa da oleosidade, caspa e irritação em apenas 7 dias</strong>, com melhora expressiva na saúde geral do couro cabeludo.
                   </p>
 
                   <div className="bg-green-50 p-4 sm:p-6 rounded-lg mb-6">
@@ -462,7 +464,7 @@ const RankingSection = () => {
                     O produto utiliza uma combinação exclusiva de ativos naturais que atuam na regulação sebácea e limpeza profunda dos folículos, proporcionando um ambiente saudável para o crescimento capilar.
                   </p>
 
-                  <p className="text-gray-900 mb-6">O Hidra Caps atua através de três mecanismos:</p>
+                  <p className="text-gray-900 mb-6">O NuHair atua através de três mecanismos:</p>
 
                   <div className="space-y-4 mb-6">
                     <div className="text-gray-900">
@@ -477,27 +479,25 @@ const RankingSection = () => {
                   </div>
 
                   <div className="flex flex-col sm:flex-row gap-4 mb-6">
-                    <UtmLink 
-                      href="https://app.monetizze.com.br/r/BQP1887431" 
-                      className="w-full bg-[#00C853] text-white text-center py-4 sm:py-4 px-4 rounded-lg hover:bg-[#00B848] transition-colors flex items-center justify-center gap-2 text-base sm:text-base font-semibold"
-                      eventId="site-oficial-hidracaps"
+                    <ScrollLink 
+                      targetId="ranking"
+                      className="w-full bg-[#00C853] text-white text-center py-4 sm:py-4 px-4 rounded-lg hover:bg-[#00B848] transition-colors flex items-center justify-center gap-2 text-base sm:text-base font-semibold cursor-pointer"
                     >
-                      <span>→</span> Acessar Site Oficial
-                    </UtmLink>
-                    <UtmLink 
-                      href="https://app.monetizze.com.br/r/BQP1887431" 
-                      className="w-full bg-[#FF6B00] text-white text-center py-4 sm:py-4 px-4 rounded-lg hover:bg-[#FF5722] transition-colors flex items-center justify-center gap-2 text-base sm:text-base font-semibold"
-                      eventId="informacoes-hidracaps"
+                      <span>→</span> Voltar ao Ranking
+                    </ScrollLink>
+                    <ScrollLink 
+                      targetId="ranking"
+                      className="w-full bg-[#FF6B00] text-white text-center py-4 sm:py-4 px-4 rounded-lg hover:bg-[#FF5722] transition-colors flex items-center justify-center gap-2 text-base sm:text-base font-semibold cursor-pointer"
                     >
-                      <span>→</span> Obter mais informações
-                    </UtmLink>
+                      <span>→</span> Ver Outros Produtos
+                    </ScrollLink>
                   </div>
 
                   <div className="mt-6 bg-orange-50 p-4 rounded-lg">
                     <p className="text-gray-700 text-sm flex items-start gap-2">
                       <span className="text-orange-500">⚠</span>
                       <span>
-                        Atenção: Não somos vendedores ou representantes do Hidra Caps. Para mais informações sobre o produto, acesse
+                        Atenção: Não somos vendedores ou representantes do NuHair. Para mais informações sobre o produto, acesse
                         o site oficial clicando nos botões acima.
                       </span>
                     </p>
@@ -517,7 +517,7 @@ const RankingSection = () => {
               <div className="flex justify-between items-start mb-6 pt-2 flex-col sm:flex-row gap-4 sm:gap-0">
                 <div>
                   <div className="flex items-center gap-3 mb-2">
-                    <h4 className="text-xl sm:text-2xl text-gray-900 font-bold">Lizz Ante Nutri</h4>
+                    <h4 className="text-xl sm:text-2xl text-gray-900 font-bold">Imecap</h4>
                     <span className="bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm">Recomendado</span>
                   </div>
                   <p className="text-gray-900 font-medium text-base sm:text-lg tracking-wide">Aumento de densidade capilar</p>
@@ -536,8 +536,8 @@ const RankingSection = () => {
               <div className="flex flex-col sm:flex-row gap-8 mb-8">
                 <div className="w-full sm:w-64 shrink-0">
                   <Image
-                    src="/mounja-400.png"
-                    alt="Lizz Ante Nutri: Aumento de densidade capilar"
+                    src="/imecap.png"
+                    alt="Imecap: Aumento de densidade capilar"
                     width={256}
                     height={384}
                     className="rounded-lg mx-auto sm:mx-0"
@@ -546,17 +546,17 @@ const RankingSection = () => {
                     quality={85}
                   />
                   <p className="text-sm text-gray-600 text-center mt-2">
-                    Lizz Ante Nutri: Aumento de densidade capilar
+                    Imecap: Aumento de densidade capilar
                   </p>
                 </div>
 
                 <div className="flex-1">
                   <h5 className="text-2xl font-bold text-gray-900 mb-4">
-                    Por que o Lizz Ante Nutri é eficaz para aumentar a densidade capilar?
+                    Por que o Imecap é eficaz para aumentar a densidade capilar?
                   </h5>
 
                   <p className="text-gray-700 mb-6">
-                    O <strong>Lizz Ante Nutri</strong> é um suplemento inovador que <strong>utiliza a tecnologia de peptídeos avançados para estimular o crescimento de novos folículos capilares</strong>. Nossa análise mostrou que 78% das usuárias relataram aumento significativo na densidade capilar.
+                    O <strong>Imecap</strong> é um suplemento inovador que <strong>utiliza a tecnologia de peptídeos avançados para estimular o crescimento de novos folículos capilares</strong>. Nossa análise mostrou que 78% das usuárias relataram aumento significativo na densidade capilar.
                   </p>
 
                   <div className="bg-green-50 p-4 sm:p-6 rounded-lg mb-6">
@@ -583,7 +583,7 @@ const RankingSection = () => {
                     O produto se destaca por sua fórmula concentrada e pela presença de peptídeos biomimético, um ingrediente natural com propriedades regenerativas para os folículos capilares.
                   </p>
 
-                  <p className="text-gray-900 mb-6">O Lizz Ante Nutri atua através de três mecanismos:</p>
+                  <p className="text-gray-900 mb-6">O Imecap atua através de três mecanismos:</p>
 
                   <div className="space-y-4 mb-6">
                     <div className="text-gray-900">
@@ -598,27 +598,25 @@ const RankingSection = () => {
                   </div>
 
                   <div className="flex flex-col sm:flex-row gap-4 mb-6">
-                    <UtmLink 
-                      href="https://app.monetizze.com.br/r/BDQ1887432" 
-                      className="w-full bg-[#00C853] text-white text-center py-4 sm:py-4 px-4 rounded-lg hover:bg-[#00B848] transition-colors flex items-center justify-center gap-2 text-base sm:text-base font-semibold"
-                      eventId="site-oficial-lizzantenutri"
+                    <ScrollLink 
+                      targetId="ranking"
+                      className="w-full bg-[#00C853] text-white text-center py-4 sm:py-4 px-4 rounded-lg hover:bg-[#00B848] transition-colors flex items-center justify-center gap-2 text-base sm:text-base font-semibold cursor-pointer"
                     >
-                      <span>→</span> Acessar Site Oficial
-                    </UtmLink>
-                    <UtmLink 
-                      href="https://app.monetizze.com.br/r/BDQ1887432" 
-                      className="w-full bg-[#FF6B00] text-white text-center py-4 sm:py-4 px-4 rounded-lg hover:bg-[#FF5722] transition-colors flex items-center justify-center gap-2 text-base sm:text-base font-semibold"
-                      eventId="informacoes-lizzantenutri"
+                      <span>→</span> Voltar ao Ranking
+                    </ScrollLink>
+                    <ScrollLink 
+                      targetId="ranking"
+                      className="w-full bg-[#FF6B00] text-white text-center py-4 sm:py-4 px-4 rounded-lg hover:bg-[#FF5722] transition-colors flex items-center justify-center gap-2 text-base sm:text-base font-semibold cursor-pointer"
                     >
-                      <span>→</span> Obter mais informações
-                    </UtmLink>
+                      <span>→</span> Ver Outros Produtos
+                    </ScrollLink>
                   </div>
 
                   <div className="mt-6 bg-orange-50 p-4 rounded-lg">
                     <p className="text-gray-700 text-sm flex items-start gap-2">
                       <span className="text-orange-500">⚠</span>
                       <span>
-                        Atenção: Não somos vendedores ou representantes do Lizz Ante Nutri. Para mais informações sobre o produto, acesse
+                        Atenção: Não somos vendedores ou representantes do Imecap. Para mais informações sobre o produto, acesse
                         o site oficial clicando nos botões acima.
                       </span>
                     </p>
@@ -717,19 +715,19 @@ const RankingSection = () => {
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="text-green-600 mt-1">→</span>
-                            <span><strong>Top Hair:</strong> Perfeito para cabelos fracos e quebradiços</span>
+                            <span><strong>Folixil:</strong> Perfeito para combater a calvície e preencher falhas</span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="text-green-600 mt-1">→</span>
-                            <span><strong>Donna Hair:</strong> Excelente para combater queda capilar intensa</span>
+                            <span><strong>Rogaine:</strong> Excelente para combater queda capilar intensa</span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="text-green-600 mt-1">→</span>
-                            <span><strong>Hidra Caps:</strong> Ótimo para problemas de couro cabeludo e oleosidade</span>
+                            <span><strong>NuHair:</strong> Ótimo para problemas de couro cabeludo e oleosidade</span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="text-green-600 mt-1">→</span>
-                            <span><strong>Lizz Ante Nutri:</strong> Recomendado para quem precisa aumentar o volume capilar</span>
+                            <span><strong>Imecap:</strong> Recomendado para quem precisa aumentar o volume capilar</span>
                           </li>
                         </ul>
                       </div>

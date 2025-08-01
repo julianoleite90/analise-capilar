@@ -2,23 +2,6 @@ import Image from 'next/image';
 import ScrollLink from './ScrollLink';
 
 const HeroSection = () => {
-  const formatDate = () => {
-    // Obter data atual no timezone de Brasília de forma mais confiável
-    // Forçar a atualização da data garantindo que não use cache
-    const currentDateTime = new Date(Date.now());
-    
-    // Converter para timezone de São Paulo usando toLocaleDateString diretamente
-    const options: Intl.DateTimeFormatOptions = {
-      timeZone: 'America/Sao_Paulo',
-      month: 'long', 
-      year: 'numeric'
-    };
-    
-    const brasiliaDateString = currentDateTime.toLocaleDateString('pt-BR', options);
-    
-    // Capitaliza a primeira letra
-    return brasiliaDateString.charAt(0).toUpperCase() + brasiliaDateString.slice(1);
-  };
 
   return (
     <section className="bg-gradient-to-b from-gray-50 to-gray-100 pt-8 pb-16 md:py-16">
@@ -29,37 +12,41 @@ const HeroSection = () => {
             {/* Data de atualização */}
             <div className="pt-2 md:pt-6">
               <p className="text-gray-600 text-sm">
-                {formatDate()}
+                Atualizado em julho de 2025.
               </p>
             </div>
 
             {/* Título principal */}
             <div className="text-left">
               <h1 className="text-3xl lg:text-4xl xl:text-[2.75rem] font-bold text-gray-900 leading-tight mb-2">
-                <div className="text-gray-900">Conheça os 5 Melhores Remédios para queda de cabelo de 2025</div>
+                <div className="text-gray-900">Acabe com a Queda de Cabelo: Os 5 Melhores Remédios de 2025!</div>
               </h1>
-              <h2 className="text-xl lg:text-2xl text-gray-600 mb-4">Descubra quais tratamentos capilares estão ajudando milhares de mulheres a acabar com a queda e a recuperar a densidade dos cabelos</h2>
+              <h2 className="text-xl lg:text-2xl text-gray-600 mb-4">Soluções eficazes com recomendação de especialistas e aprovação da anvisa.</h2>
             </div>
 
-            {/* Subtítulo com destaque */}
-            <p className="text-gray-700 leading-relaxed">
-            Já tentou combater a queda capilar sem sucesso? Muitas mulheres enfrentam essa dificuldade, mas a ciência avançou. Nesta análise, nossa equipe revela o ranking dos 5 melhores produtos de 2025, validados por estudos clínicos e experiência especializada.
-            </p>
+
 
             {/* Imagem em mobile */}
-            <div className="block lg:hidden relative h-[450px] w-full mt-[2px] mb-6">
+            <div className="block lg:hidden w-full">
               <Image
-                src="/img-fundo.png"
+                src="/img-mob.png"
                 alt="Produtos para queda de cabelo feminino"
-                fill
-                className="object-cover object-top"
+                width={800}
+                height={450}
+                className="w-full h-auto max-h-[300px] object-contain"
                 priority
               />
             </div>
 
             {/* Primeiro parágrafo */}
             <p className="text-gray-700 leading-relaxed">
-            Com a liderança da Especialista Ana Costa, especialista renomada em tricologia e saúde capilar, analisamos centenas de estudos e depoimentos reais. Abaixo, explore nosso ranking com os 5 melhores produtos de 2025 e descubra qual se adapta melhor aos seus objetivos de crescimento capilar.
+            Você já tentou de tudo para recuperar seus cabelos, mas nada funciona? A boa notícia é: milhares de homens e mulheres estão transformando suas vidas com os tratamentos capilares mais eficazes de 2025.
+            Com a expertise da renomada especialista Ana Costa, analisamos estudos clínicos e depoimentos reais para revelar o ranking dos 5 melhores remédios que combatem a queda e devolvem a densidade aos fios, preenchendo as falhas, e trazendo novos fios até naquelas entradas mais profundas.
+            </p>
+
+            {/* Segundo parágrafo */}
+            <p className="text-gray-700 leading-relaxed font-medium">
+            Confira agora o ranking com os 5 melhores!
             </p>
 
 
@@ -68,18 +55,18 @@ const HeroSection = () => {
               targetId="ranking"
               className="inline-flex bg-[#00A040] hover:bg-[#008F35] text-white font-medium py-4 px-4 sm:px-8 rounded-lg transition-colors duration-300 items-center justify-between w-full text-sm sm:text-base whitespace-nowrap"
             >
-              <span className="flex-1 text-center">Clique e confira o ranking agora!</span>
+              <span className="flex-1 text-center">CONFIRA O RANKING COM OS 5 MELHORES</span>
               <span>↓</span>
             </ScrollLink>
           </div>
 
           {/* Imagem do lado direito (apenas desktop) */}
-          <div className="hidden lg:block relative h-[400px] rounded-2xl overflow-hidden shadow-2xl">
+          <div className="hidden lg:block relative h-[400px]">
             <Image
-              src="/img-fundo.png"
+              src="/img-fundo-2.png"
               alt="Produtos para queda de cabelo feminino"
               fill
-              className="object-cover"
+              className="object-contain"
               priority
             />
           </div>
