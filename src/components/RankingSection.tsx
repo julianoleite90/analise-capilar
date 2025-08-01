@@ -34,7 +34,7 @@ const RankingSection = () => {
                     <h4 className="text-lg sm:text-xl text-gray-900 font-bold">Biocapilar</h4>
                     <span className="bg-green-50 text-green-700 px-2 py-0.5 rounded-full text-sm">Extramamente recomendado</span>
                   </div>
-                  <p className="text-gray-900 font-medium text-sm sm:text-base tracking-wide">Considerado a melhor opção entre os usuários, alguns consideram como um tipo de "fórmula milagrosa"</p>
+                  <p className="text-gray-900 font-medium text-sm sm:text-base tracking-wide">Considerado a melhor opção entre os usuários, alguns consideram como um tipo de &ldquo;fórmula milagrosa&rdquo;</p>
                 </div>
                 <div className="flex flex-col items-end">
                   <div className="flex items-center gap-2 mb-1">
@@ -68,7 +68,7 @@ const RankingSection = () => {
                   </h5>
 
                   <p className="text-gray-700 mb-6">
-                    Em nossa análise detalhada e entrevistas exclusivas, o Biocapilar se destacou como o queridinho do momento. Sua fórmula inovadora foi amplamente elogiada, com relatos impressionantes de resultados. Alguns usuários notaram melhorias em apenas 12 dias de uso, enquanto outros afirmam que a queda de cabelo "simplesmente desapareceu" como por um milagre!
+                    Em nossa análise detalhada e entrevistas exclusivas, o Biocapilar se destacou como o queridinho do momento. Sua fórmula inovadora foi amplamente elogiada, com relatos impressionantes de resultados. Alguns usuários notaram melhorias em apenas 12 dias de uso, enquanto outros afirmam que a queda de cabelo &ldquo;simplesmente desapareceu&rdquo; como por um milagre!
                   </p>
                   
                   <p className="text-gray-700 mb-6">
