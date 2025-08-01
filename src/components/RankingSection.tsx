@@ -2,6 +2,7 @@ import Image from 'next/image';
 import UtmLink from './UtmLink';
 import ScrollLink from './ScrollLink';
 import SectionTracker from './SectionTracker';
+import FloatingBackToRanking from './FloatingBackToRanking';
 
 const RankingSection = () => {
   return (
@@ -795,6 +796,7 @@ const RankingSection = () => {
           </SectionTracker>
         </div>
       </div>
+      <FloatingBackToRanking />
     </section>
   );
 };
